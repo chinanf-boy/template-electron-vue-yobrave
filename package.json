@@ -9,7 +9,7 @@
     "postinstall": "electron-builder install-app-deps",
     "start": "electron-forge start",
     "test": "echo lol",
-    "dist": "build"
+    "package": "build"
   },
   "config": {
     "forge": {
@@ -34,8 +34,8 @@
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
       "github_repository": {
-        "owner": "",
-        "name": ""
+        "owner": "chinanf-boy",
+        "name": "template-electron-vue-yobrave"
       },
       "windowsStoreConfig": {
         "packageName": "",

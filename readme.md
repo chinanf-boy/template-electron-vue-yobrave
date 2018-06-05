@@ -1,15 +1,6 @@
-# Name [![explain](http://llever.com/explain.svg)](https://github.com/chinanf-boy/Source-Explain)
+# template-electron-vie
 
-「 desc 」
-
-
-Explanation
-
-> "version": "1.0.0"
-
-[github source]()
-
-[中文](./readme.md) | ~~[english](./readme.en.md)~~
+「 about vue and electron 」
 
 ---
 
@@ -22,8 +13,36 @@ Explanation
 
 ---
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Use](#use)
+  - [start](#start)
+  - [package](#package)
+  - [continue ...](#continue-)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ---
 
+## Use
+
+### start
+
+``` js
+npm run start
+```
+
+use `electron-forge` the reload func
+
+### package
+
+```
+npm run package
+```
+
+use `electron-builder` package the app
+
+
+### continue ...
