@@ -1,0 +1,77 @@
+{
+  "private": true,
+  "name": "template-electron-vue-yobrave",
+  "description": "my vue electron project",
+  "version": "0.0.0r",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electron-forge start",
+    "test": "echo lol",
+    "dist": "build"
+  },
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "yarn"
+      },
+      "electronWinstallerConfig": {
+        "name": "vue_electron_vue"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "vueelectronvue"
+      }
+    }
+  },
+  "build": {
+    "appId": "com.yobrave.template-electron-vue",
+    "productName": "vue repo",
+    "asar": true,
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false
+    },
+    "linux": {
+      "category": "public.app-category.developer-tools"
+    }
+  },
+  "dependencies": {
+    "electron-compile": "^6.4.2",
+    "electron-devtools-installer": "^2.1.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "vue": "^2.1.7"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-builder": "^20.15.1",
+    "electron-forge": "^5.2.2",
+    "electron-prebuilt-compile": "2.0.2"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "my-vue-electron-pro",
+    "productName": "template vue",
+    "version": "0.0.1",
+    "description": "my vue project",
+    "author": {
+      "name": "yobrave",
+      "email": "yobrave@outlook.com"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "electron-config": "^1.0.0",
+      "electron-context-menu": "^0.9.1",
+      "electron-debug": "^1.1.0",
+      "electron-is-dev": "^0.2.0"
+    }
+  }
+  
